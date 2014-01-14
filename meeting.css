@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0
+}
+
+body {
+    background-color: #4A4A4A;
+    font-size: 15px;
+    color: #FFF;
+    -webkit-text-size-adjust: none;
+    line-height: 1.6;
+    font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3"
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+:target {
+    color: #9cff00;
+}
+
+.mod-movie {
+    min-height: 320px;
+    display: block;
+}
+
+.mod-control {
+    background-color: #333333;
+    padding: 5px 5px 5px 15px;
+    position: relative;
+    font-size: 12px;
+}
+
+.mod-control:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 8px;
+    border-style: dashed dashed dashed solid;
+    border-color: transparent transparent transparent #9cff00;
+    top: 50%;
+    margin-top: -8px;
+    left: 0;
+}
+
+.mod-control__img {
+    float: left;
+    margin-right: 10px;
+}
+
+.mod-control__name {
+    color: #9cff00
+}
+
+.mod-control__jump {
+    background-image: url(img/jump.png);
+    width: 63px;
+    height: 27px;
+    -webkit-background-size: 126px;
+    background-size: 126px;
+    float: right;
+    margin-left: 15px;
+    margin-top: 5px;
+    line-height: 99;
+    overflow: hidden;
+}
+
+.mod-control__next {
+    background-position: -63px 0;
+}
+
+.mod-index {
+    right: -50px;
+    position: fixed;
+    top: 0;
+    -webkit-transition:right 500ms ease-in; transition:right 500ms ease-in;
+}
+
+.mod-index_fixed {
+    right:0;
+}
+
+.mod-index__item {
+    text-align: center;
+    display: block;
+    line-height: 1;
+    padding: 0 10px 0 30px;
+    font-size: 12px;
+}
+.mod-index__hint{
+    display: none;
+    color:#666;
+    margin-left:36px;
+    font-size: 10px;
+}
+:target .mod-index__hint{
+    display: inline;
+}
+
+.mod-list__index {
+    background: #272727;
+    padding: 5px 10px;
+    display: block;
+    margin:5px 0;
+}
+
+.mod-list__item {
+    display: block;
+    padding:5px 10px;
+}
+
+.mod-list__avatar {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.mod-wifi{
+    display:none;
+    color: #9cff00;
+    font-size: 12px;
+    padding:5px 10px;
+}
+.mod-wifi_off{
+    display:block;
+}
